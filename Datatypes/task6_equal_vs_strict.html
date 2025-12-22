@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 06</title>
+</head>
+<body>
+    <script>
+// Task: 
+// 6) check the diffrence between == and === just metion that diffrence in comment
+
+"use strict";
+
+// =====================================
+// == vs === (Detailed Explanation)
+// =====================================
+
+// ==  (Loose Equality)
+// ✔ Compares only VALUES
+// ✔ Performs type conversion automatically
+// ❌ Can give unexpected results
+
+// === (Strict Equality)
+// ✔ Compares VALUE + DATATYPE
+// ✔ No type conversion
+// ✔ Safer and recommended
+
+// Basic Examples
+
+console.log(5 == "5");      // Output: true
+console.log(5 === "5");     // Output: false
+
+console.log(true == 1);     // Output: true
+console.log(true === 1);    // Output: false
+
+console.log(false == 0);    // Output: true
+console.log(false === 0);   // Output: false
+
+
+// null & undefined
+
+console.log(null == undefined);    // Output: true
+console.log(null === undefined);   // Output: false
+
+console.log(null == 0);            // Output: false
+console.log(undefined == 0);       // Output: false
+
+// String & Number Comparison
+
+console.log("10" == 10);    // Output: true
+console.log("10" === 10);   // Output: false
+
+console.log("" == 0);       // Output: true
+console.log("" === 0);      // Output: false
+
+
+// NaN Comparison (Tricky Interview Case)
+
+console.log(NaN == NaN);    // Output: false
+console.log(NaN === NaN);   // Output: false
+
+// Correct way to check NaN
+console.log(Number.isNaN(NaN)); // Output: true
+
+// Object & Array Comparison
+
+console.log({} == {});      // Output: false
+console.log([] == []);      // Output: false
+
+let a = {};
+let b = a;
+
+console.log(a == b);        // Output: true
+console.log(a === b);       // Output: true
+
+    </script>
+  
+</body>
+</html>
+<script src="task1_primitive_types.js"></script>
+<script src="task2_implicit_explicit.js"></script>
+<script src="task3_type_conversion.js"></script>
+<script src="task4_arithmetic_prompt.js"></script>
+<script src="task5_comparison_operators.js"></script>
+<script src="task6_equal_vs_strict.js"></script>
+<script src="task7_logical_operators.js"></script>

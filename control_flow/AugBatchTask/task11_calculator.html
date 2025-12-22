@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11 </title>
+</head>
+<body>
+    <script>
+
+// Simple Calculator
+// Input: Two numbers and an operator (+, -, *, /)
+// Output: Result of the operation using switch case on the operator
+
+let num1 = Number(prompt("Enter first number"));
+let num2 = Number(prompt("Enter second number"));
+let operator = prompt("Enter operator (+, -, *, /)");
+
+switch (operator) {
+  case "+": console.log(num1 + num2); break;
+  case "-": console.log(num1 - num2); break;
+  case "*": console.log(num1 * num2); break;
+  case "/": console.log(num1 / num2); break;
+  default: console.log("Invalid Operator");
+}
+
+    </script>
+</body>
+</html>

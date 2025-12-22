@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttemptFail Task</title>
+</head>
+<body>
+  <script>
+    //
+    // Parameters receive values, arguments send values.  
+// let attempts = 0;
+// let username;
+// let pass;
+
+// while (count < 3) {
+//   username = prompt("Enter Name");
+//   pass = prompt("Enter Pass");
+
+//   if (username === "Admin" && pass === "Admin123") {
+//     alert("Login Success....");
+//     break;
+//   } else {
+//     count++;
+//     if (count === 3) {
+//       alert("Attempt Failed..... Try after 30 min");
+//     } else {
+//       alert("Incorrect");
+//     }
+//   }
+// }
+
+// For Loop
+// let username, pass;
+
+// for (let count = 1; count <= 3; count++) {
+//   username = prompt("Enter Name");
+//   pass = prompt("Enter Pass");
+
+//   if (username === "Admin" && pass === "Admin123") {
+//     alert("Login Success....");
+//     break;
+//   }
+
+//   if (count === 3) {
+//     alert("Attempt Failed..... Try after 30 min");
+//   } else {
+//     alert("Incorrect");
+//   }
+// }
+
+
+let username = prompt("Enter Name");
+let pass = prompt("Enter Pass");
+let count = 1;
+
+do {
+  if (username === "Admin" && pass === "Admin123") {
+    alert("Login Success....");
+    break;
+  } else {
+    if (count === 3) {
+      alert("Attempt Failed..... Try after 30 min");
+      break;
+    }
+
+    alert("Incorrect");
+
+    username = prompt("Please re-Enter Name");
+    pass = prompt("Please re-Enter Pass");
+    count++;
+  }
+} while (count <= 3);
+
+
+</script>
+
+
+
+</body>
+</html>

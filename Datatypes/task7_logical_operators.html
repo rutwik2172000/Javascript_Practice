@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 07</title>
+</head>
+<body>
+    <script>
+// Task:
+// 7)use all logical operaters
+
+// AND (&&) Operator
+
+console.log(true && true);    // Output: true
+console.log(true && false);   // Output: false
+console.log(false && true);   // Output: false
+console.log(false && false);  // Output: false
+
+// AND returns first falsy value or last truthy value
+console.log(5 && 10);         // Output: 10
+console.log(0 && 10);         // Output: 0
+console.log("Hi" && "Bye");   // Output: "Bye"
+console.log("" && "Hello");   // Output: ""
+
+// OR (||) Operator
+
+console.log(true || false);   // Output: true
+console.log(false || false);  // Output: false
+
+// OR returns first truthy value
+console.log(5 || 10);         // Output: 5
+console.log(0 || 10);         // Output: 10
+console.log("" || "Hello");   // Output: "Hello"
+console.log(null || "JS");    // Output: "JS"
+
+
+// NOT (!) Operator
+
+console.log(!true);           // Output: false
+console.log(!false);          // Output: true
+console.log(!0);              // Output: true
+console.log(!1);              // Output: false
+console.log(!"");             // Output: true
+console.log(!"Hello");        // Output: false
+
+
+
+let x = 0;
+
+// second condition NOT executed
+console.log(x && x++);  // Output: 0
+console.log(x);         // Output: 0
+
+let y = 1;
+
+// second condition executed
+console.log(y && y++);  // Output: 1
+console.log(y);         // Output: 2
+
+
+// Double NOT (!!) for Boolean Conversion
+
+console.log(!!1);        // Output: true
+console.log(!!0);        // Output: false
+console.log(!!"JS");     // Output: true
+console.log(!!"");       // Output: false
+console.log(!!null);     // Output: false
+
+//login example:
+
+let username = "admin";
+let password = "1234";
+
+console.log(username === "admin" && password === "1234"); // Output: true
+
+let isLoggedIn = false;
+console.log(isLoggedIn || "Guest User");
+
+    </script>
+</body>
+</html>

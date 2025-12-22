@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 09 </title>
+</head>
+<body>
+<script>
+// Task:
+// Find maximun and minimum number from three integer number(Take input from user)
+
+let x = Number(prompt("Enter first number"));
+let y = Number(prompt("Enter second number"));
+let z = Number(prompt("Enter third number"));
+
+let max = x;
+let min = x;
+
+if (y > max) max = y;
+if (z > max) max = z;
+
+if (y < min) min = y;
+if (z < min) min = z;
+
+console.log("Maximum:", max);
+console.log("Minimum:", min);
+
+
+</script>
+</body>
+</html>

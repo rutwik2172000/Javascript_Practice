@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 07 </title>
+</head>
+<body>
+    <script>
+// Task:
+// // If number > 0
+// If number is even → "Positive Even"
+// Else → "Positive Odd"
+// Else if number < 0
+// If number is even → "Negative Even"
+// Else → "Negative Odd"
+// Else → "Zero"
+
+let n = Number(prompt("Enter a number"));
+
+if (n > 0) {
+  console.log(n % 2 === 0 ? "Positive Even" : "Positive Odd");
+} else if (n < 0) {
+  console.log(n % 2 === 0 ? "Negative Even" : "Negative Odd");
+} else {
+  console.log("Zero");
+}
+
+
+    </script>
+</body>
+</html>

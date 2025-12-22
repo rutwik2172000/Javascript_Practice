@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 15</title>
+</head>
+<body>
+    <Script>
+// Task:
+// Menu-Driven Program
+// Input: Choice from a menu (e.g., 1 = Add, 2 = Subtract, etc.)
+// Output: Perform selected operation
+
+
+let a = Number(prompt("Enter first number"));
+let b = Number(prompt("Enter second number"));
+let choice = Number(prompt("1.Add  2.Subtract  3.Multiply  4.Divide"));
+
+switch (choice) {
+  case 1: console.log("Add:", a + b); break;
+  case 2: console.log("Subtract:", a - b); break;
+  case 3: console.log("Multiply:", a * b); break;
+  case 4: console.log("Divide:", a / b); break;
+  default: console.log("Invalid Choice");
+}
+
+
+
+    </Script>
+</body>
+</html>

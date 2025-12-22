@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 05</title>
+</head>
+<body>
+    <script>
+// Task:
+//5) use all comparision operator
+
+// Basic Comparison Examples
+
+console.log(5 == "5");     // Output: true  (value same)
+console.log(5 === "5");    // Output: false (datatype different)
+
+console.log(null == undefined);   // Output: true
+console.log(null === undefined);  // Output: false
+
+console.log(true == 1);    // Output: true
+console.log(true === 1);   // Output: false
+
+console.log(false == 0);   // Output: true
+console.log(false === 0);  // Output: false
+
+
+// String Comparison
+
+console.log("apple" > "banana");   // Output: false (alphabetical order)
+console.log("cat" < "dog");        // Output: true
+console.log("A" < "a");            // Output: true (ASCII value)
+
+
+// Comparison with null & undefined
+
+console.log(null > 0);     // Output: false
+console.log(null == 0);    // Output: false
+console.log(null >= 0);    // Output: true  // tricky
+
+console.log(undefined > 0);   // Output: false
+console.log(undefined == 0);  // Output: false
+console.log(undefined < 0);   // Output: false
+
+
+// NaN Comparisons
+
+console.log(NaN == NaN);      // Output: false
+console.log(NaN === NaN);     // Output: false
+console.log(NaN != NaN);      // Output: true
+
+// Correct way to check NaN
+console.log(isNaN(NaN));      // Output: true
+
+
+// Boolean Comparison
+
+console.log(1 > true);     // Output: false (1 > 1)
+console.log(2 > true);     // Output: true  (2 > 1)
+console.log(0 == false);   // Output: true
+console.log(0 === false);  // Output: false
+
+
+// Array Comparison (Reference Check)
+
+console.log([] == []);      // Output: false
+// console.log([] === []);     // Output: false  //This condition will always return 'false' since JavaScript compares objects by reference, not value.
+
+let arr1 = [];
+let arr2 = arr1;
+
+console.log(arr1 == arr2);  // Output: true
+console.log(arr1 === arr2); // Output: true
+
+    </script>
+</body>
+</html>
