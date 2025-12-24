@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3 find user by id</title>
+</head>
+<body>
+    <script>
+// Task:
+// Given an array of user objects, find the user whose id is 3.
+// [
+//   { id: 1, name: "Amit" },
+//   { id: 2, name: "Rahul" },
+//   { id: 3, name: "Neha" }
+// ]
+
+const users = [
+  { id: 1, name: "Amit" },
+  { id: 2, name: "Rahul" },
+  { id: 3, name: "Neha" }
+];
+
+const result = users.find(user => user.id === 3);
+console.log(result);
+
+    </script>
+</body>
+</html>

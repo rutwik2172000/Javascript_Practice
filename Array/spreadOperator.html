@@ -1,38 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPREAD OPERATOR</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        // What it does :
-        // It expands an array or object into individual elements.
+      // let arr=[,,"red","blue","green","yellow","pink","orange","black"];
+      // console.log(arr.length);
+      // console.log(arr);
+      // console.log(arr[2]);
 
-        // 1. Copy an array
+      //array destructing
+      // let[color1,color5,color45,...restData]=arr;
+      // console.log(color45);  //green
+      // console.log(restData);
 
-        let arr1= [11,22,33];
-        let arr2=[...arr1];
-        console.log(arr2);
+      //spread operators
+      // let arr1 = [1, 2, 3, 4, 5];
+      // let arr2 = [6, 7, 8, 9, 10];
+      // let arr4 = [11, 12];
 
-        // 2. Merge arrays
+      // let arr3=[arr1+arr2];
+      // console.log(arr3);
 
-        let a = [6,9];
-        let b = [69];
+      // let arr3=[arr1 , arr2];
+      // console.log(arr3);
 
-        let merge = [...a,...b];
-        console.log(merge);
+      // let arr3=arr1.concat(arr2,arr4,34);
+      // console.log(arr3[12]);
 
-        // 3. Spread in function arguments
+      //spread operator
+      // let arr3=[...arr1,...arr2,...arr4,"sam"];
+      // console.log(arr3);
 
-        function sum(x,y,z){
-            return x+y+z;
-        }
+      // let arr=[1,20,3,45];
+      // let arr=[4,2,3,1];
+      // console.log(arr.sort((a , b)=> {return (a-b)})) //
+      // console.log(arr.sort((a , b)=> {return (b-a)})) //
 
-        let numbers = [11,22,33];
-        console.log(sum(...numbers));
-        
+      // let arr=[1,2,3,4,5,6,7,8,9,10];
+      // let result1=arr.some((n)=>{return n%2==0 })
+      // console.log(result1);
+
+      // let result2=arr.every((n)=>{return n%2==0 })
+      // console.log(result2);
+
+      //     let arr = [1, 2, 3, 4];
+      //    let arr1= arr.fill(100, 1, 4);
+      //     console.log(arr);
+      //     console.log(arr1);  // [1, 0, 0, 4]
+
+      // let arr = [5, 12, 8, 130, 44];
+      // let found = arr.find(num => num > 10);
+      // console.log(found);  // 12
+
+      // let foundfil = arr.filter(num => num > 10);
+      // console.log(foundfil);  // [12,130,44]
+
+      //         let arr = [1, 2, 3, 2];
+      // console.log(arr.indexOf(2));  // 1
+      // console.log(arr.lastIndexOf(2));  // 3
+
+      // let arr2=[1,2,3,4,5];
+      // console.log(arr2.join()); //1,2,3,4,5
+      // console.log(arr2.join("-")); //
+
+      let arr = [1, 2, 3, 4, 5, 65];
+      // let result=arr.reduce((acc,curr)=>{
+      //     return acc+curr;
+      // },10)
+      // console.log(result);
+      let max = arr.reduce((acc, curr) => {
+        return acc > curr ? acc : curr;
+      });
+      console.log(max);
+
+      let min = arr.reduce((acc, curr) => {
+        return acc < curr ? acc : curr;
+      });
+      console.log(min);
+
+      // What it does :
+      // It expands an array or object into individual elements.
+
+      // 1. Copy an array
+
+      let arr1 = [11, 22, 33];
+      let arr2 = [...arr1];
+      console.log(arr2);
+
+      // 2. Merge arrays
+
+      let a = [6, 9];
+      let b = [69];
+
+      let merge = [...a, ...b];
+      console.log(merge);
+
+      // 3. Spread in function arguments
+
+      function sum(x, y, z) {
+        return x + y + z;
+      }
+
+      let numbers = [11, 22, 33];
+      console.log(sum(...numbers));
     </script>
-</body>
+  </body>
 </html>
