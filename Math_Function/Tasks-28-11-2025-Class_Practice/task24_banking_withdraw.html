@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 24</title>
+  </head>
+  <body>
+    <script>
+
+// 24. Banking System Mini Project
+//    code: let account = {
+//   holder: "Sachin",
+//   balance: 5000,
+//   transactions: []
+// };
+//  TASK : 
+// 1)Create a function deposit(amount)
+// 2)Create function withdraw(amount) (check balance)
+
+      function deposit(amount) {
+        account.balance += amount;
+      }
+
+      function withdraw(amount) {
+        if (amount <= account.balance) account.balance -= amount;
+        else console.log("Insufficient balance");
+      }
+
+      deposit(2000);
+      withdraw(3000);
+      console.log(account.balance);
+      
+    </script>
+  </body>
+</html>

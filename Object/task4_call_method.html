@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4 call method</title>
+</head>
+<body>
+    <script>
+//create a object that contains one function print your fullname,friend(15) using call method
+
+let person = {
+  fullname: function (friends) {
+    console.log("Full Name:", this.name);
+    console.log("Friends:", friends);
+  }
+};
+
+let user1 = {
+  name: "Rutwik Khurpade"
+};
+
+person.fullname.call(user1, 15);
+
+    </script>
+</body>
+</html>

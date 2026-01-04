@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Function Task 10</title>
+</head>
+<body>
+
+<!-- // 10. Generate random password of 8 characters
+// Use random + ASCII or array of characters. -->
+
+   <script>
+
+function generatePassword() {
+  let password = "";
+
+  for (let i = 0; i < 8; i++) {
+    let ascii;
+
+    if (Math.random() < 0.5) {
+      ascii = Math.floor(Math.random() * (90 - 65 + 1)) + 65; // A-Z
+    } else {
+      ascii = Math.floor(Math.random() * (122 - 97 + 1)) + 97; // a-z
+    }
+
+    password += String.fromCharCode(ascii);
+  }
+
+  return password;
+}
+
+console.log("Random Password:", generatePassword());
+
+   </script> 
+</body>
+</html>

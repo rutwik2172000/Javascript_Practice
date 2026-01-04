@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 19</title>
+  </head>
+  <body>
+    <script>
+// 19. Create an array of employee objects:
+//     Code :
+// [
+//   { name: "John", salary: 25000, dept: "IT" },
+//   { name: "Sara", salary: 30000, dept: "HR" },
+//   { name: "Mike", salary: 20000, dept: "IT" }
+// ]
+// Tasks inside:
+// Write a function to print employees of IT department.
+// Find total salary using a loop.
+// Convert all names to uppercase.
+// Find highest paid employee.
+
+      let emp = [
+        { name: "John", salary: 25000, dept: "IT" },
+        { name: "Sara", salary: 30000, dept: "HR" },
+        { name: "Mike", salary: 20000, dept: "IT" },
+      ];
+
+      console.log(emp.filter((e) => e.dept === "IT"));
+
+      let total = 0;
+      emp.forEach((e) => (total += e.salary));
+      console.log("Total Salary:", total);
+
+      emp.forEach((e) => console.log(e.name.toUpperCase()));
+
+      console.log(emp.reduce((max, e) => (e.salary > max.salary ? e : max)));
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task9 Validate Numeric Inputs</title>
+</head>
+<body>
+    <Script>
+      
+// Task 9: Validate Numeric Inputs
+// Write a function that:
+// Accepts multiple values
+// Uses Math.max()
+// Returns "Invalid Input" if any value is not a number
+
+function validateMax(...values) {
+  for (let val of values) {
+    if (typeof val !== "number" || isNaN(val)) {
+      return "Invalid Input";
+    }
+  }
+  return Math.max(...values);
+}
+
+console.log("Valid:", validateMax(10, 20, 30));
+console.log("Valid:", validateMax(10, "20", 30));
+       
+    </Script>
+</body>
+</html>

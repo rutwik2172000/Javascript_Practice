@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2 min number</title>
+</head>
+<body>
+    <Script>
+      
+// Task 2: Find Minimum Value
+// Write a function that accepts four numbers and returns the smallest using Math.min().
+        
+function findMin(a, b, c, d, callback) {
+  let result = Math.min(a, b, c, d);
+  callback(result);
+}
+
+function displayResult(minValue) {
+  console.log("Min:", minValue);
+}
+
+findMin(12, 4, 19, 7, displayResult);
+
+    </Script>
+</body>
+</html>

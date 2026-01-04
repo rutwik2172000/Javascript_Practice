@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task13 remove by condition</title>
+</head>
+<body>
+    <script>
+// Remove Property Based on Condition
+// Remove all properties whose value is less than 50.
+// { a: 30, b: 70, c: 40, d: 90 }
+
+let data = { a: 30, b: 70, c: 40, d: 90 };
+
+for (let key in data) {
+  if (data[key] < 50) {
+    delete data[key];
+  }
+}
+
+console.log(data);
+
+
+    </script>
+</body>
+</html>

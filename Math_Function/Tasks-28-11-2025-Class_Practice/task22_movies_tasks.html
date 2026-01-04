@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 22</title>
+  </head>
+  <body>
+    <script>
+
+// 22.Array of movie objects:
+//   Code:[
+//   { title: "Kantara", rating: 9, year: 2022 },
+//   { title: "KGF", rating: 8, year: 2018 },
+//   { title: "Pushpa", rating: 7, year: 2021 }
+// ]
+// TASK : Write function to return movies with rating > 8
+// Sort movies by year
+// Convert all titles to uppercase
+// Find oldest movie
+
+      let movies = [
+        { title: "Kantara", rating: 9, year: 2022 },
+        { title: "KGF", rating: 8, year: 2018 },
+        { title: "Pushpa", rating: 7, year: 2021 },
+      ];
+
+      console.log(movies.filter((m) => m.rating > 8));
+      console.log(movies.sort((a, b) => a.year - b.year));
+      console.log(movies.map((m) => m.title.toUpperCase()));
+      console.log(movies.reduce((old, m) => (m.year < old.year ? m : old)));
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3 freeze seal</title>
+</head>
+<body>
+    <script>
+// use freeze and seal method on same object  nd  just try to update that object just note what happned write it in comment
+
+let user = {
+  name: "Rahul",
+  age: 25
+};
+
+// Object.freeze
+Object.freeze(user);
+user.age = 30; // Not updated
+user.city = "Pune"; // Not added
+
+// Freeze:
+// Ans: freeze → cannot add, delete or update properties
+
+// Object.seal
+let emp = {
+  name: "Amit",
+  age: 28
+};
+
+Object.seal(emp);
+emp.age = 30; // Updated
+delete emp.age; // Not deleted
+emp.city = "Mumbai"; // Not added
+
+// Seal:
+// Ans: seal → can update existing properties only
+
+    </script>
+</body>
+</html>
