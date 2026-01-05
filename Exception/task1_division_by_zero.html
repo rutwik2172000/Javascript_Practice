@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1 division by zero</title>
+</head>
+<body>
+    <script>
+
+// Task 1: Handle Division by Zero
+// Write a program that:
+// Takes two numbers
+// Uses try...catch
+// Throws an error if the divisor is 0
+// Prints "Division successful" in finally
+
+function divideNumbers(a, b) {
+  try {
+    if (b === 0) {
+      throw new Error("Divisor cannot be zero");
+    }
+
+    let result = a / b;
+    console.log("Result:", result);
+
+  } catch (error) {
+    console.error("Error:", error.message);
+
+  } finally {
+    console.log("Division successful - Task 1");
+  }
+}
+
+divideNumbers(10, 2); 
+divideNumbers(10, 0); 
+
+//  function div(a,b){
+//  if(b==0){
+//  throw new Error("Can't Devide by Zero");
+//  }
+//  onsole.log(a/b)
+//  }
+//  div(15,10);
+
+    </script>
+</body>
+</html>

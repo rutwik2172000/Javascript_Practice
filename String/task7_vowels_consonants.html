@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7 Vowels & Consonants</title>
+</head>
+<body>
+<script>
+
+// Task 7: Count Vowels and Consonants
+// Count number of:
+// Vowels
+// Consonants
+
+  let str = "Rutwik Khurpade";
+  let vowels = 0;
+  let consonants = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    let ch = str[i].toLowerCase();
+
+    if ("aeiou".includes(ch)) {
+      vowels++;
+    } else  {
+      consonants++;
+    }
+  }
+
+  console.log("Vowels:", vowels);
+  console.log("Consonants:", consonants);
+
+  
+</script>
+</body>
+</html>
+
+<!-- function countVowels(str) {
+  const match = str.match(/[aeiou]/gi);
+  return match ? match.length : 0;
+}
+
+const name = "virat kohli";
+const vowelsCount = countVowels(name);
+
+console.log(`The string "${name}" has ${vowelsCount} vowels.`); -->

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2 string length validator</title>
+</head>
+<body>
+    <script>
+
+// Task 2: String Length Validator
+// Write a function that:
+// Accepts a string
+// Throws an error if the string length is less than 5
+// Prints "Valid String" otherwise
+
+function validateString(str) {
+  try {
+    if (str.length < 5) {
+      throw new Error("String length must be at least 5 characters");
+    }
+
+    console.log("Valid String");
+
+  } catch (error) {
+    console.error("Error:", error.message);
+  }
+}
+
+validateString("Hello");   
+validateString("Hi");     
+
+
+// let str="Rutwik"
+// if(str.length<=5){
+//     throw new Error("string length is less than 5")
+// }
+// else{
+//     console.log(str)
+// }
+
+    </script>
+</body>
+</html>

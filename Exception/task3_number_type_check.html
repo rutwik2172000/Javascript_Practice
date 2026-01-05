@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3 number type check</title>
+</head>
+<body>
+    <script>
+
+// Task 3: Number Type Check
+// Write a function that:
+// Accepts a value
+// Throws an error if the value is not a number
+// Uses try...catch...finally
+
+function checkNumberType(value) {
+  try {
+    if (typeof value !== "number" || isNaN(value)) {
+      throw new Error("Input is not a valid number");
+    }
+
+    console.log("Valid Number:", value);
+
+  } catch (error) {
+    console.error("Error:", error.message);
+
+  } finally {
+    console.log("Number Type Check Completed - Task 3");
+  }
+}
+
+checkNumberType(25);       
+checkNumberType("25");      
+checkNumberType(true);      
+checkNumberType(NaN);       
+
+//    let a=50;
+//    if(Number.isInteger(a))
+//    {
+//    console.log("The given number is integer")        
+//    }
+//    else{
+//        console.log("The given number is not integer")
+//    }
+
+    </script>
+</body>
+</html>
