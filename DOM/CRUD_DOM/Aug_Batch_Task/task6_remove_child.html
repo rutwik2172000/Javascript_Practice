@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task6 Remove Child</title>
+  </head>
+  <body>
+
+    <ul id="list">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Mango</li>
+    </ul>
+
+    <script>
+
+//     TASK 6: Remove Child Element
+//     (removeChild)
+//     Given HTML:
+//     <ul id="list">
+//       <li>Apple</li>
+//       <li>Banana</li>
+//       <li>Mango</li>
+//     </ul>
+//     Question:
+//     Remove the "Banana" list item using removeChild().
+
+      const list = document.getElementById("list");
+      const banana = list.children[1];
+
+      list.removeChild(banana);
+
+    </script>
+  </body>
+</html>

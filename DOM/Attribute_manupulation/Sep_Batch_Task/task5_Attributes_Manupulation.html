@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5 remove style atttribute</title>
+  </head>
+  <body>
+    <div id="box" style="background: red; width: 100px; height: 100px"></div>
+    <br />
+    <button onclick="removeStyle()">Remove Style</button>
+    <script>
+
+// Task 5: Remove Style Attribute
+// Create a div with inline style:
+// <div style="background: red; width:100px; height:100px"></div>
+// Add a button “Remove Style”.
+// When clicked:
+// Use removeAttribute("style") to reset the design.
+
+      function removeStyle() {
+        document.getElementById("box").removeAttribute("style");
+      }
+    </script>
+  </body>
+</html>

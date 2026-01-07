@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task07 add remove class</title>
+    <style>
+      .active {
+        background-color: green;
+        color: white;
+        padding: 15px;
+        width: 200px;
+        text-align: center;
+      }
+
+      #box {
+        border: 2px solid black;
+        padding: 15px;
+        width: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">Click Button</div>
+    <br />
+
+    <button onclick="toggleClass()">Toggle Class</button>
+
+    <script>
+
+//   Task 7: Add & Remove Class Attribute
+//   Create a div box.
+//    On button click:
+//   Add class active
+//   On second click remove it
+//   (Use setAttribute() & removeAttribute())
+
+
+      function toggleClass() {
+        const box = document.getElementById("box");
+
+        if (box.getAttribute("class") === "active") {
+          box.removeAttribute("class");
+        } else {
+          box.setAttribute("class", "active");
+        }
+      }
+    </script>
+  </body>
+</html>

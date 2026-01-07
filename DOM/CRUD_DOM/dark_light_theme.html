@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Light Theme</title>
+</head>
+<body>
+
+<button onclick="Theme()">LIGHT</button>
+
+    <script>
+           function Theme(){
+            document.body.style.background="black"
+
+           let text=document.querySelector("button").textContent;
+           console.log(text)
+
+           if(text=="DARK")
+           {
+            document.querySelector("button").textContent="LIGHT";
+            document.body.style.background="white"
+        }else{
+               document.querySelector("button").textContent="DARK";
+           }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task03 getElementsByTagName</title>
+  </head>
+  <body>
+
+<ul>
+  <li>Rutwik</li>
+  <li>OM</li>
+  <li>Akhilesh</li>
+</ul>
+
+    <script>
+
+// Q3. getElementsByTagName()
+// Create an unordered list with multiple <li> items.
+// Using getElementsByTagName(), change:
+// text color
+// margin of each list item
+
+      const li = document.getElementsByTagName("li");
+      for (let item of li) {
+        item.style.color = "purple";
+        item.style.margin = "10px";
+      }
+    </script>
+  </body>
+</html>

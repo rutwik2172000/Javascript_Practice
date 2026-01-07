@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task12 mini dom challenge</title>
+    <style>
+      .hcolor {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="one">create</h2>
+    <p class="two">Document object Model</p>
+    <p class="two">Document object Model</p>
+    <button id="btn">update</button>
+
+    <script>
+      
+// Q12. Mini DOM Challenge
+// Create a webpage with:
+// one heading (ID)
+// two paragraphs (class)
+// one button
+// Tasks:
+// Style the heading using ID
+// Style paragraphs using class
+// Style the button using querySelector
+// Add or remove a class using classList
+// Use style.setProperty() at least once
+
+      document.getElementById("one").style.color = "red";
+
+      const paras = document.getElementsByClassName("two");
+      for (let p of paras) {
+        p.style.color = "blue";
+      }
+
+      document.getElementById("btn").onclick = function () {
+        document.getElementById("one").classList.toggle("hcolor");
+      };
+    </script>
+  </body>
+</html>

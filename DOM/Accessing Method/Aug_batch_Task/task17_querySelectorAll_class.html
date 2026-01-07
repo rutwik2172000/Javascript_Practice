@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task17 querySelectorAll class</title>
+</head>
+<body>
+
+<div class="one">one</div>
+<div class="one">two</div>
+
+    <script>
+
+// Q17. querySelectorAll with Class
+// Create multiple elements using the same class.
+// Using querySelectorAll(), apply:
+// margin
+// font size
+// to all elements.
+
+const element = document.querySelectorAll(".one");
+element.forEach(card => {
+  element.style.margin = "15px";
+  element.style.fontSize = "18px";
+});
+
+    </script>
+</body>
+</html>

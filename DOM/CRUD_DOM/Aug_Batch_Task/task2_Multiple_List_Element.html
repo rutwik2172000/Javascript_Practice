@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2 Multiple List Element</title>
+  </head>
+  <body>
+    <script>
+
+//   TASK 2: Create Multiple List Items
+//   (createElement, createTextNode, appendChild)
+//   Question:
+//   Create an unordered list <ul> with 5 <li> items having text:
+//     Item 1
+//     Item 2
+//     Item 3
+//     Item 4
+//     Item 5
+//     Append the list to the page.
+
+      const ul = document.createElement("ul");
+
+      for (let i = 1; i <= 5; i++) {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode("Item " + i));
+        ul.appendChild(li);
+      }
+
+      document.body.appendChild(ul);
+    </script>
+  </body>
+</html>

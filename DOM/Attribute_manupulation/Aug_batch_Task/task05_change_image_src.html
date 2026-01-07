@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task05 change image src</title>
+ <style>
+        #myImage {
+            display: none;            
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            border: 2px solid black;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="myImage" alt="Sample Image">
+
+    <br><br>
+
+    <button onclick="img1()">Image 1</button>
+    <button onclick="img2()">Image 2</button>
+
+    <script>
+
+//   Task 5: Change Image Source
+//   Create an image and two buttons:
+//   Button 1 → Show Image 1
+//   Button 2 → Show Image 2
+//    Change the src attribute dynamically.
+
+        function img1() {
+            const img = document.getElementById("myImage");
+            img.src = "https://images.pexels.com/photos/35113987/pexels-photo-35113987.jpeg";
+            img.style.display = "block";
+        }
+
+        function img2() {
+            const img = document.getElementById("myImage");
+            img.src = "https://images.pexels.com/photos/35199314/pexels-photo-35199314.jpeg";
+            img.style.display = "block"; 
+        }
+    </script>
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task05 querySelectorAll</title>
+</head>
+<body>
+
+<button class="btn">Button 1</button>
+<button class="btn">Button 2</button>
+<button class="btn">Button 3</button>
+<button class="btn">Button 4</button>
+
+    <script>
+
+// Q5. querySelectorAll()
+// Create multiple buttons on a page.
+// Using querySelectorAll(), apply:
+// same background color
+// same text color
+// border radius to all buttons
+
+document.querySelectorAll(".btn").forEach(btn => {
+  btn.style.backgroundColor = "red";
+  btn.style.color = "white";
+  btn.style.borderRadius = "6px";
+});
+
+    </script>
+</body>
+</html>

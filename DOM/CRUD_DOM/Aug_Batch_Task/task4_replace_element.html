@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task4 Replace Element</title>
+  </head>
+  <body>
+
+    <div id="box">
+      <p>Old Paragraph</p>
+    </div>
+
+    <script>
+
+//     TASK 4: Replace an Existing Element
+//     (replaceChild)
+//     Given HTML:
+//     <div id="box">
+//       <p>Old Paragraph</p>
+//     </div>
+//     Question:
+//     Replace "Old Paragraph" with a new paragraph having text
+//     "This paragraph has been replaced"
+
+      const box = document.getElementById("box");
+
+      const newPara = document.createElement("p");
+      newPara.textContent = "This paragraph has been replaced";
+
+      const oldPara = box.querySelector("p");
+      box.replaceChild(newPara, oldPara);
+    </script>
+  </body>
+</html>

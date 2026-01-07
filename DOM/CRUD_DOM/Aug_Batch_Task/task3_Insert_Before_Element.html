@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3 Insert Before Element</title>
+  </head>
+  <body>
+
+    <ul id="menu">
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+
+    <script>
+
+//     TASK 3: Insert Element Before Another
+//     (insertBefore)
+//     Given HTML:
+//     <ul id="menu">
+//       <li>Home</li>
+//       <li>About</li>
+//     </ul>
+//     Question:
+//     Insert a new list item "Services" before the "About" item.
+
+      const menu = document.getElementById("menu");
+
+      const newItem = document.createElement("li");
+      newItem.textContent = "Services";
+
+      const aboutItem = menu.children[1];
+      menu.insertBefore(newItem, aboutItem);
+
+    </script>
+  </body>
+</html>

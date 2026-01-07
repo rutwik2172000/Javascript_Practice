@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task7 check attributes Existence</title>
+  </head>
+  <body>
+    <input id="inputBox" placeholder="Enter text" />
+    <br /><br />
+
+    <button onclick="checkPlaceholder()">Check Placeholder</button>
+    <p id="result"></p>
+
+    <script>
+
+// Task 7: Check Attribute Existence
+// Create an input with placeholder.
+// Make a button “Check Placeholder”.
+// When clicked:
+// If hasAttribute("placeholder") is true → show message “Placeholder exists”
+// Else show “No placeholder found”
+
+      function checkPlaceholder() {
+        const input = document.getElementById("inputBox");
+        const msg = document.getElementById("result");
+
+        if (input.hasAttribute("placeholder")) {
+          msg.textContent = "Placeholder exists";
+        } else {
+          msg.textContent = "No placeholder found";
+        }
+      }
+    </script>
+  </body>
+</html>

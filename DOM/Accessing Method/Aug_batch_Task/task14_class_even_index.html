@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task14 class even index</title>
+</head>
+<body>
+
+<p class="one">Document Object Model 1</p>
+<p class="one">Document Object Model 2</p>
+<p class="one">Document Object Model 3</p>
+<p class="one">Document Object Model 4</p>
+
+    <script>
+
+// Q14. Class-based Color Change
+// Create multiple elements with the same class name.
+// Using getElementsByClassName(), change the text color of only even-indexed elements.
+
+const texts = document.getElementsByClassName("one");
+
+for (let i = 0; i < texts.length; i++) {
+  if (i % 2 === 0) {
+    texts[i].style.color = "red";
+  }
+}
+
+    </script>
+</body>
+</html>

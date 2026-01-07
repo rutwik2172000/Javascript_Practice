@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task04 check attribute</title>
+  </head>
+  <body>
+    <input id="email" required />
+    <button onclick="checkRequired()">Check Required</button>
+    <script>
+
+//   Task 4: Check Attribute Exists
+//   Create an input with required attribute.
+//    Use JavaScript to check if required exists and display result in alert.
+
+      function checkRequired() {
+        const input = document.getElementById("email");
+        alert(input.hasAttribute("required"));
+      }
+    </script>
+  </body>
+</html>

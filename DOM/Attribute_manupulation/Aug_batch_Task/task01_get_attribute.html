@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task01 get attribute</title>
+  </head>
+  <body>
+    <input id="nameInput" placeholder="Enter your name" />
+    <button onclick="getPlaceholder()">Get Placeholder</button>
+
+    <script>
+      
+// TASK
+// Task 1: Get Attribute Value
+// Create an input field with an id and placeholder.
+// Write JavaScript to print the placeholder value in console when a button is clicked.
+
+      function getPlaceholder() {
+        const input = document.getElementById("nameInput");
+        console.log(input.getAttribute("placeholder"));
+      }
+    </script>
+  </body>
+</html>

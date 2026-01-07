@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3 Add Active Class on Menu Items</title>
+    <style>
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+      ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      .active {
+        background-color: yellow;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <ul type="none">
+          <li><a href="#" onclick="home()">HOME</a></li>
+          <li><a href="#" onclick="ser()">SERVIES</a></li>
+          <li><a href="#" onclick="abt()">ABOUT</a></li>
+          <li><a href="#" onclick="con()">CONTACT</a></li>
+          <!-- <button onclick="xx()">xx</button> -->
+        </ul>
+      </div>
+    </section>
+    <script>
+
+// Task 3: Add Active Class on Menu Items
+// Create a navigation menu with 4 items.
+// When the user clicks any item:
+// Remove active class from all items
+// Add active class to the clicked item
+// Active item should be highlighted using CSS.
+
+
+      let x = document.querySelectorAll("ul li a");
+    //   let y = document.querySelector("a");
+    //   let z = document.querySelector("a");
+    //   let zz = document.querySelector("a");
+
+      //           function home() {
+      //     alert("Hello from the link!");
+      //   }
+      function home() {
+        x.classList.add(".active");
+      }
+      function ser() {
+        y.classList.add("active");
+        x.classList.remove("active");
+      }
+      function abt() {
+        z.classList.add("active");
+        x.classList.remove("active");
+      }
+      function con() {
+        zz.classList.add("active");
+        x.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

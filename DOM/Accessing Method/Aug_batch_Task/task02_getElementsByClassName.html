@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task02 getElementsByClassName</title>
+  </head>
+  <body>
+    <p class="Class">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nesciunt cum
+      repellendus omnis quibusdam exercitationem nihil officiis consequuntur non
+      tempore id a, voluptate maxime neque. Quasi expedita recusandae temporibus
+      ad.
+    </p>
+    <p class="Class">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem modi ipsam in
+      architecto! Labore impedit, nobis incidunt pariatur quisquam, a natus
+      dolorum commodi ex, placeat repellat non perspiciatis sunt. Aliquam?p>
+    </p>
+    <p class="Class">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sunt illum
+      adipisci illo, dolore laboriosam non aut reiciendis itaque quos id
+      obcaecati et, doloremque, saepe voluptatem ab sit nobis autem.
+    </p>
+
+    <script>
+      
+// Q2. getElementsByClassName()
+// Create at least three paragraphs with the same class name.
+// Using getElementsByClassName(), apply:
+// bold font
+// different text color to all paragraphs
+
+      const collection = document.getElementsByClassName("Class");
+
+      let textcolor = ["blue", "red", "green"];
+
+      for (let i = 0; i < collection.length; i++) {
+        collection[i].style.fontWeight = "bold";
+        collection[i].style.color = textcolor[i];
+      }
+    </script>
+  </body>
+</html> 

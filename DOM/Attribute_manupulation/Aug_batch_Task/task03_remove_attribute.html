@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task03 remove attribute</title>
+  </head>
+  <body>
+    <input id="inputBox" disabled />
+    <button onclick="enableInput()">Enable Input</button>
+
+    <script>
+
+//  Task 3: Remove Attribute
+//  Create an input field with disabled attribute.
+//  On button click, remove the disabled attribute.
+
+      function enableInput() {
+        document.getElementById("inputBox").removeAttribute("disabled");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task6 Create a Tab Component</title>
+    <link rel="stylesheet" href="style6.css">
+  </head>
+  <body>
+    <div class="tabs">
+      <button class="tab active" onclick="openTab('home', this)">Home</button>
+      <button class="tab" onclick="openTab('about', this)">About</button>
+      <button class="tab" onclick="openTab('contact', this)">Contact</button>
+    </div>
+
+    <div class="tab-content">
+      <div id="home" class="content show">Home Content</div>
+      <div id="about" class="content">About Content</div>
+      <div id="contact" class="content">Contact Content</div>
+    </div>
+
+<!-- // Task 6: Create a Tab Component
+// Make 3 tabs:
+// Home
+// About
+// Contact
+// Clicking a tab should:
+// Add active class to selected tab
+// Add show class to its content section
+// Remove classes from others -->
+
+    <script>
+      function openTab(tabId, element) {
+
+        const tabs = document.querySelectorAll(".tab");
+        tabs.forEach((tab) => tab.classList.remove("active"));
+
+        const contents = document.querySelectorAll(".content");
+        contents.forEach((content) => content.classList.remove("show"));
+
+        element.classList.add("active");
+
+        document.getElementById(tabId).classList.add("show");
+      }
+    </script>
+  </body>
+</html>
