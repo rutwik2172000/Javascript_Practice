@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3 Disable Ctrl V-Paste</title>
+  </head>
+  <body>
+    <script>
+
+//     3 Disable Ctrl + V (Paste)
+//     Task:
+//     Prevent pasting content into an input field using Ctrl + V and show:
+//     “Pasting is not allowed.”
+
+      document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "v") {
+          e.preventDefault();
+          alert("Pasting is not allowed");
+        }
+      });
+    </script>
+  </body>
+</html>

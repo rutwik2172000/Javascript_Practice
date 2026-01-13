@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5 mousedown count</title>
+  </head>
+  <body>
+    <div id="box">Press Count</div>
+    <p id="count">0</p>
+    
+    <script>
+
+// 6)Count how many times the mouse button is pressed on a specific element.
+
+      var count = 0;
+      document.getElementById("box").onmousedown = function () {
+        count = count + 1;
+        document.getElementById("count").innerText = count;
+      };
+    </script>
+  </body>
+</html>

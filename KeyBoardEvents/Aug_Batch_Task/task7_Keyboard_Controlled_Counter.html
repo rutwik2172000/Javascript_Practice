@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task7 Keyboard Controlled Counter</title>
+  </head>
+  <body>
+    <h2>Counter: <span id="counter">0</span></h2>
+
+    <script>
+
+//     7. Keyboard Controlled Counter
+//     Task:
+//     Press ArrowUp → Increase counter
+//     Press ArrowDown → Decrease counter
+//     Press R → Reset counter
+
+      let counter = 0;
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowUp") counter++;
+        if (e.key === "ArrowDown") counter--;
+        if (e.key === "r") counter = 0;
+
+        document.getElementById("counter").textContent = counter;
+      });
+    </script>
+  </body>
+</html>

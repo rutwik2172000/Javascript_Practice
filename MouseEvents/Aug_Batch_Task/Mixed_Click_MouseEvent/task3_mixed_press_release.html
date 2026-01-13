@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3 mixed press release</title>
+  </head>
+  <body>
+    <button id="btn">Press</button>
+
+    <script>
+
+// 3)Show “Pressed” on mousedown and “Released” on mouseup.
+
+      document.getElementById("btn").onmousedown = function () {
+        this.innerText = "Pressed";
+      };
+
+      document.getElementById("btn").onmouseup = function () {
+        this.innerText = "Released";
+      };
+    </script>
+  </body>
+</html>

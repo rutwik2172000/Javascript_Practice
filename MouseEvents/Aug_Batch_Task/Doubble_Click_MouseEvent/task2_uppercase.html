@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2 uppercase</title>
+  </head>
+  <body>
+    <p id="text">double click me</p>
+    
+    <script>
+
+// 2)Double-click on a text to convert it into uppercase.
+
+      document.getElementById("text").ondblclick = function () {
+        this.innerText = this.innerText.toUpperCase();
+      };
+    </script>
+  </body>
+</html>

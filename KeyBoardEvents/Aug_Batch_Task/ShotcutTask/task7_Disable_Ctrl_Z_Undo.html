@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task7 Disable Ctrl Z-Undo</title>
+  </head>
+  <body>
+    <script>
+
+//     7 Disable Ctrl + Z (Undo)
+//     Task:
+//     Prevent undo operation in an input field using Ctrl + Z and show a warning message.
+
+      document.addEventListener("keydown", (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key === "z") {
+          e.preventDefault();
+          alert("Undo Disabled");
+        }
+      });
+    </script>
+  </body>
+</html>

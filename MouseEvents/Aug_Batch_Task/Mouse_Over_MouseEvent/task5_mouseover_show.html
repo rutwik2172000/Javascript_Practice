@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5 mouseover show</title>
+  </head>
+  <body>
+    <h2 id="head">Hover Heading</h2>
+    <p id="hidden" style="display: none">Hidden Text</p>
+
+    <script>
+
+// 5)Show hidden text when the mouse is placed over a heading.
+
+      document.getElementById("head").onmouseover = function () {
+        document.getElementById("hidden").style.display = "block";
+      };
+    </script>
+  </body>
+</html>

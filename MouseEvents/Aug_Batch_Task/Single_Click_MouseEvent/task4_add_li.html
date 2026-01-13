@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task4 add list li</title>
+  </head>
+  <body>
+    <button id="btn">Add List Item</button>
+    <ul id="list"></ul>
+
+    <script>
+
+// 4)On clicking a button, dynamically create a new <li> item inside a <ul>.
+
+      document.getElementById("btn").onclick = function () {
+        const li = document.createElement("li");
+        li.innerText = "New Item";
+        document.getElementById("list").appendChild(li);
+      };
+    </script>
+  </body>
+</html>

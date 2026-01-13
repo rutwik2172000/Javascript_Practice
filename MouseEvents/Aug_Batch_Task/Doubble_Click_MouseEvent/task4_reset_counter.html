@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task4 reset counter</title>
+  </head>
+  <body>
+    <button id="btn">Reset</button>
+    <p id="count">5</p>
+    
+    <script>
+
+// 4)Double-click a button to reset a counter value to zero.
+
+      document.getElementById("btn").ondblclick = function () {
+        document.getElementById("count").innerText = 0;
+      };
+    </script>
+  </body>
+</html>

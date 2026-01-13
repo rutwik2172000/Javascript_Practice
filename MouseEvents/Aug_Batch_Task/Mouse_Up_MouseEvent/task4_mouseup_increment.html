@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task4 mouseup increment</title>
+  </head>
+  <body>
+    <button id="btn">Release</button>
+    <p id="count">0</p>
+
+    <script>
+
+// 4)Increase a value only when the mouse button is released.
+
+      var value = 0;
+      document.getElementById("btn").onmouseup = function () {
+        value = value + 1;
+        document.getElementById("count").innerText = value;
+      };
+    </script>
+  </body>
+</html>

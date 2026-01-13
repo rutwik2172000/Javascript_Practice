@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1 mouseout restore</title>
+  </head>
+  <body>
+    <div id="box" style="width: 100px; height: 100px; background: yellow"></div>
+
+    <script>
+
+// 1)Restore the original background color of a box when the mouse leaves it.
+
+      document.getElementById("box").onmouseout = function () {
+        this.style.backgroundColor = "gray";
+      };
+    </script>
+  </body>
+</html>

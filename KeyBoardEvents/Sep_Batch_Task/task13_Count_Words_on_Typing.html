@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 13 Count Words on Typing</title>
+  </head>
+  <body>
+    <textarea name="" id="x"></textarea>
+    <p id="cnt"></p>
+    <script>
+
+// 13 Count Words on Typing
+// Using keyup, count words typed inside a textarea and display the total count.
+
+      let count = 0;
+      let x = document.getElementById("x");
+      let y = document.getElementById("cnt");
+
+      document.addEventListener("keyup", (event) => {
+        // count = event.key;
+        count++;
+        x.textContent = count;
+        console.log(count);
+
+        y.textContent = count;
+      });
+    </script>
+  </body>
+</html>

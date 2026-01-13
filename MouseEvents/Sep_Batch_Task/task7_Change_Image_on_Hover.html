@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>task7 Change Image on Hover</title>
+
+    <style>
+      img {
+        width: 250px;
+        height: auto;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img id="hoverImg" src="769896.png" alt="Hover Image" />
+
+    <script>
+
+// 7) Change Image on Hover 
+// When mouse enters an image → change the image. 
+// When mouse leaves → change it back.
+
+      const img = document.getElementById("hoverImg");
+
+      img.addEventListener("mouseenter", () => {
+        img.src = "1400254.png";
+      });
+
+      img.addEventListener("mouseleave", () => {
+        img.src = "769896.png";
+      });
+    </script>
+  </body>
+</html>

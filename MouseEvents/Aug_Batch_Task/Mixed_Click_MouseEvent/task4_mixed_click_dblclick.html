@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task4 mixed click dblclick</title>
+  </head>
+  <body>
+    <button id="btn">Click Me</button>
+
+    <script>
+
+// 4)Create a button that reacts differently for click and dblclick.
+
+      var btn = document.getElementById("btn");
+
+      btn.onclick = function () {
+        alert("Single Click");
+      };
+
+      btn.ondblclick = function () {
+        alert("Double Click");
+      };
+    </script>
+  </body>
+</html>

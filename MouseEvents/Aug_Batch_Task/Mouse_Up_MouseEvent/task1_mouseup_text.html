@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1 mouseup text</title>
+  </head>
+  <body>
+    <button id="btn">Release Mouse</button>
+
+    <script>
+
+// 1)Change the text inside a button to “Mouse Released” when the mouse button is released.
+
+      document.getElementById("btn").onmouseup = function () {
+        this.innerText = "Mouse Released";
+      };
+    </script>
+  </body>
+</html>

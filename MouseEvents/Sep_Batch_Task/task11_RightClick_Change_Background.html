@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> task11 Right Click Background Change</title>
+
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Right-click anywhere to change background color</p>
+
+    <script>
+
+//11). Right-Click to Change Background 
+// When user right-clicks anywhere on the page, background color changes randomly.
+
+      document.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+
+        const randomColor =
+          "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+        document.body.style.backgroundColor = randomColor;
+      });
+    </script>
+  </body>
+</html>

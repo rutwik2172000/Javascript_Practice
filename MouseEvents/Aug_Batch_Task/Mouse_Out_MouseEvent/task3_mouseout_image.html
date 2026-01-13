@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3 mouseout image</title>
+  </head>
+  <body>
+    <img id="img" src="img1.jpg" width="150" />
+
+    <script>
+
+// 3)Reset the image size when the mouse leaves the image.
+
+      document.getElementById("img").onmouseout = function () {
+        this.style.width = "100px";
+      };
+    </script>
+  </body>
+</html>

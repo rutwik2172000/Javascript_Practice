@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1 box color</title>
+  </head>
+  <body>
+    <div id="box" style="width: 100px; height: 100px; background: red"></div>
+
+    <script>
+
+// 1)Create a box that changes its color only when double-clicked.
+
+      document.getElementById("box").ondblclick = function () {
+        this.style.background = "green";
+      };
+    </script>
+  </body>
+</html>

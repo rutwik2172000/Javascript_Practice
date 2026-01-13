@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2Show Message On Enter Key</title>
+  </head>
+  <body>
+    <h2>Press Enter</h2>
+    <p id="msg"></p>
+    <script>
+      
+//     2. Show Message on Enter Key
+//     Task:
+//     Display a message “Form Submitted” when the user presses the Enter key.
+//     Concepts Used:
+//     Conditional check on event.key === "Enter"
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          document.getElementById("msg").textContent = "Form Submitted";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2 mixed select delete</title>
+  </head>
+  <body>
+    <div id="box">Click or Double Click</div>
+
+    <script>
+
+// 2)Use click to select a box and dblclick to delete it.
+
+      var box = document.getElementById("box");
+
+      box.onclick = function () {
+        box.style.border = "2px solid green";
+      };
+
+      box.ondblclick = function () {
+        box.remove();
+      };
+    </script>
+  </body>
+</html>

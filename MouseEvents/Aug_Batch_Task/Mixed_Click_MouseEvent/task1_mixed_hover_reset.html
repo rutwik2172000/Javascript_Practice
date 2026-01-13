@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1 mixed hover reset</title>
+  </head>
+  <body>
+    <div id="box" style="width: 100px; height: 100px"></div>
+
+    <script>
+
+// 1)Change color on mouse over and reset it on mouse out.
+
+      var box = document.getElementById("box");
+
+      box.onmouseover = function () {
+        box.style.backgroundColor = "blue";
+      };
+
+      box.onmouseout = function () {
+        box.style.backgroundColor = "gray";
+      };
+    </script>
+  </body>
+</html>

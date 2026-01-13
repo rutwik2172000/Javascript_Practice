@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5 toggle para</title>
+  </head>
+  <body>
+    <button id="btn">Toggle</button>
+    <p id="para">Hello World</p>
+
+    <script>
+
+// 5)Click a button to hide and show a paragraph alternately.
+
+      document.getElementById("btn").onclick = function () {
+        var para = document.getElementById("para");
+
+        if (para.style.display === "none") {
+          para.style.display = "block";
+        } else {
+          para.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

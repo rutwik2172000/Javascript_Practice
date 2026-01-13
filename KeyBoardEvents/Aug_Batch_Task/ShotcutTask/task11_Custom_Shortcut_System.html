@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task11 Custom Shortcut System</title>
+  </head>
+  <body>
+    <script>
+
+//     11 Custom Shortcut System
+//     Task:
+//     Implement the following shortcuts:
+//     Ctrl + A → Highlight a div
+//     Ctrl + B → Change background color
+//     Ctrl + D → Clear text
+//     Prevent all browser default actions.
+
+      document.addEventListener("keydown", (e) => {
+        const shortcut = e.ctrlKey || e.metaKey;
+
+        if (!shortcut) return;
+
+        e.preventDefault(); 
+
+        switch (e.key.toLowerCase()) {
+          case "a":
+            document.getElementById("box").style.background = "yellow";
+            break;
+
+          case "b":
+            document.body.style.background = "lightblue";
+            break;
+
+          case "d":
+            console.clear();
+            alert("Text Cleared");
+            break;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 1 Detect Key Press</title>
+    <style>
+      p {
+        font-size: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="xxx"></p>
+    <script>
+
+// TASK
+//  1 Detect Key Press
+// Create a webpage that prints which key the user pressed inside a <p> tag.
+// Example output: "You pressed: A".
+
+      let y = document.getElementById("xxx");
+      document.addEventListener("keydown", (event) => {
+        let x = event.key;
+        y.textContent = `You pressed : ${x}`;
+      });
+
+    </script>
+  </body>
+</html>

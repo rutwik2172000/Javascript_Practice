@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2 mouseout hide</title>
+  </head>
+  <body>
+    <button id="btn">Hover</button>
+    <p id="tip">Tooltip</p>
+
+    <script>
+
+// 2)Hide the tooltip message when the mouse moves out of a button.
+
+      document.getElementById("btn").onmouseout = function () {
+        document.getElementById("tip").style.display = "none";
+      };
+    </script>
+  </body>
+</html>
