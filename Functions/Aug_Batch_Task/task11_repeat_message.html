@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>task11 repeat message</title>
-</head>
-<body>
-    <Script>
-// Task:
-// Create a function repeatMessage(message = "Hi", times = 3) that prints the message multiple times.
+  </head>
+  <body>
+    <script>
+      // Task:
+      // Create a function repeatMessage(message = "Hi", times = 3) that prints the message multiple times.
 
-function repeatMessage(message = "Hi", times = 3) {
-  let result = "";
-  for (let i = 1; i <= times; i++) {
-    result += message + "\n";
-  }
-  return result;
-}
+      function repeatMessage(message = "Hi", times = 3) {
+        let result = "";
+        for (let i = 1; i <= times; i++) {
+          result += message + "\n";
+        }
+        return result;
+      }
 
-let msg = repeatMessage("Hello", 3);
+      let msg = repeatMessage("Hello", 3);
 
-console.log(msg);
-
-    </Script>
-</body>
+      console.log(msg);
+    </script>
+  </body>
 </html>
