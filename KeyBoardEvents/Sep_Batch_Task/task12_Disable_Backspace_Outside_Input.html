@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 12 Disable Backspace Outside Input</title>
+  </head>
+  <body>
+    <input type="text" />
+    <script>
+
+// 12 Disable Backspace Outside Input
+// When the user presses Backspace outside a text field → prevent it and show alert.
+
+      document.addEventListener("keydown", (e) => {
+        const allowed =
+          e.target.tagName === "INPUT" ||
+          e.target.tagName === "TEXTAREA" ||
+          e.target.isContentEditable;
+
+        if (e.key === "Backspace" && !allowed) {
+          e.preventDefault();
+          console.warn("Blocked Backspace outside input");
+        }
+      });
+    </script>
+  </body>
+</html>

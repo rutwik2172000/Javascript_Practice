@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task6 Disable Specific Keys</title>
+  </head>
+  <body>
+    <p id="warn"></p>
+    <script>
+
+//     6. Disable Specific Keys
+//     Task:
+//     Prevent the user from using:
+//     Right-click key
+//     F12
+//     Ctrl + C
+//     Display a warning message when blocked.
+//     Concepts Used:
+//     event.preventDefault(), key combinations
+
+      document.addEventListener("keydown", (e) => {
+        if (
+          e.key === "F12" ||
+          e.key === "ContextMenu" ||
+          ((e.ctrlKey || e.metaKey) && e.key === "c")
+        ) {
+          e.preventDefault();
+          document.getElementById("warn").textContent = "Action Blocked!";
+        }
+      });
+    </script>
+  </body>
+</html>

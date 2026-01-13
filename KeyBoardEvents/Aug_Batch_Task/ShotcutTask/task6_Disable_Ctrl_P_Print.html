@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task6 Disable Ctrl P-Print</title>
+  </head>
+  <body>
+    <script>
+
+//     6 Disable Ctrl + P (Print)
+//     Task:
+//     Block the Print dialog when Ctrl + P is pressed and show a custom print message.
+
+      document.addEventListener("keydown", (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key === "p") {
+          e.preventDefault();
+          alert("Custom Print Message");
+        }
+      });
+    </script>
+  </body>
+</html>
