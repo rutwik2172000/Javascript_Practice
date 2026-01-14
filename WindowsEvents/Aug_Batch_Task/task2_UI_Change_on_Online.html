@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2 UI Change on Online</title>
+  </head>
+  <body>
+    <span id="msg">Offline</span>
+    <script>
+
+// Task 2 (UI-Based): 
+// When the user comes online, change the page background color to green and display: 
+// “Internet Connected”
+
+      window.addEventListener("online", () => {
+        document.body.style.backgroundColor = "green";
+        document.getElementById("msg").innerText = "Internet Connected";
+      });
+    </script>
+  </body>
+</html>

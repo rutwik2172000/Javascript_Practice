@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2 Window Resize</title>
+  </head>
+  <body>
+    <span id="size"></span>
+    <script>
+
+// 2 Detect Window Resize
+// Whenever the window is resized, display the current window width and height on the screen.
+
+      function showSize() {
+        document.getElementById(
+          "size"
+        ).innerText = `Width: ${window.innerWidth}px | Height: ${window.innerHeight}px`;
+      }
+
+      window.addEventListener("resize", showSize);
+      showSize();
+    </script>
+  </body>
+</html>

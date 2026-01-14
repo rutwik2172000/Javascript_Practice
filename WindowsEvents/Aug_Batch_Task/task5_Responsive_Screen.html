@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5 Responsive Screen</title>
+  </head>
+  <body>
+    <span id="view"></span>
+    <script>
+
+// Task 5 (Responsive Logic): 
+// Show different messages based on screen size using resize event: 
+// Mobile (≤600px): “Mobile View” 
+// Tablet (601px – 1024px): “Tablet View” 
+// Desktop (>1024px): “Desktop View”
+
+      function checkScreen() {
+        const width = window.innerWidth;
+        const view = document.getElementById("view");
+
+        if (width <= 600) {
+          view.innerText = "Mobile View";
+        } else if (width <= 1024) {
+          view.innerText = "Tablet View";
+        } else {
+          view.innerText = "Desktop View";
+        }
+      }
+
+      window.addEventListener("resize", checkScreen);
+      checkScreen();
+    </script>
+  </body>
+</html>

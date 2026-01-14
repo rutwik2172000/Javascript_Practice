@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3 Online Notification Banner</title>
+  </head>
+  <body>
+    <script>
+
+// Task 3 (Real-World Scenario): 
+// Create a banner at the top of the page that appears only when the user goes online, and disappears automatically after 3 seconds.
+
+      window.addEventListener("online", () => {
+        const banner = document.createElement("div");
+        banner.innerText = "Internet Connected";
+        banner.style.cssText = `position: fixed;
+                                top: 0;
+                                width: 100%;
+                                background: green;
+                                color: white;
+                                text-align: center;
+                                padding: 10px;`;
+        document.body.appendChild(banner);
+
+        setTimeout(() => {
+          banner.remove();
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

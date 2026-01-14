@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task4 Network Status</title>
+  </head>
+  <body>
+    <span id="status"></span>
+    <script>
+
+// 4 Track Online/Offline Status
+// When the internet goes offline → show "You are offline!"
+// When it reconnects → show "Back online!"
+
+      window.addEventListener("offline", () => {
+        document.getElementById("status").innerText = "You are offline!";
+      });
+
+      window.addEventListener("online", () => {
+        document.getElementById("status").innerText = "Back online!";
+      });
+    </script>
+  </body>
+</html>
