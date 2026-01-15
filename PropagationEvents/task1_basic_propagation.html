@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1 basic propagation</title>
+  </head>
+  <body>
+    <div id="grandparent">
+      <div id="parent">
+        <button id="child">Click Me</button>
+      </div>
+    </div>
+    <script>
+
+// Task 1 (Event Propagation – Basic Stack):
+// Observe the order in which click events fire on nested elements.
+// Hint: Compare capturing phase, target phase, and bubbling phase execution order.
+
+      document
+        .getElementById("grandparent")
+        .addEventListener("click", () => console.log("Grandparent Bubble"));
+
+      document
+        .getElementById("parent")
+        .addEventListener("click", () => console.log("Parent Bubble"));
+
+      document
+        .getElementById("child")
+        .addEventListener("click", () => console.log("Child Click"));
+
+      document
+        .getElementById("grandparent")
+        .addEventListener(
+          "click",
+          () => console.log("Grandparent Capture"),
+          true
+        );
+
+      document
+        .getElementById("parent")
+        .addEventListener("click", () => console.log("Parent Capture"), true);
+    </script>
+  </body>
+</html>

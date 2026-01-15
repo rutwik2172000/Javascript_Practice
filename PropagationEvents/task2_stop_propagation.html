@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2 stop propagation</title>
+  </head>
+  <body>
+    <div id="box">
+      <button id="btn">Click</button>
+    </div>
+    <script>
+
+// Task 2 (Event Propagation – stopPropagation Trap):
+// Prevent a parent element’s click event from running when the child is clicked.
+// Hint: stopPropagation stops further bubbling but does not affect earlier phases.
+
+      document
+        .getElementById("box")
+        .addEventListener("click", () => console.log("Box Bubble"));
+
+      document.getElementById("btn").addEventListener("click", (e) => {
+        console.log("Button Click");
+        e.stopPropagation();
+      });
+    </script>
+  </body>
+</html>

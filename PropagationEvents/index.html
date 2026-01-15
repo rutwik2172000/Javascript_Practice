@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propagation and Delegation</title>
+  </head>
+  <body>
+    <section>
+      <div>
+        <p>
+          <span>
+            <button>click</button>
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <script>
+      let body = document.querySelector("body");
+      let section = document.querySelector("section");
+      let div = document.querySelector("div");
+      let para = document.querySelector("p");
+      let span = document.querySelector("span");
+      let btn = document.querySelector("button");
+
+      btn.addEventListener(
+        "click",
+        (event) => {
+          alert("button clicked....");
+          event.stopPropagation();
+        },
+        false
+      );
+      span.addEventListener(
+        "click",
+        () => {
+          alert("span clicked....");
+        },
+        false
+      );
+      para.addEventListener(
+        "click",
+        () => {
+          alert("paragraph clicked....");
+        },
+        false
+      );
+      div.addEventListener(
+        "click",
+        () => {
+          alert("div clicked....");
+        },
+        false
+      );
+      section.addEventListener(
+        "click",
+        () => {
+          alert("section clicked....");
+        },
+        false
+      );
+      body.addEventListener(
+        "click",
+        () => {
+          alert("body clicked....");
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task6 stopImmediatePropagation</title>
+  </head>
+  <body>
+    <button id="btn">Click</button>
+    <script>
+
+// Task 6 (Event Propagation – stopImmediatePropagation):
+// Stop other event listeners on the same element from executing.
+// Hint: stopImmediatePropagation blocks remaining listeners completely, not just bubbling.
+
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        console.log("First Listener");
+      });
+
+      btn.addEventListener("click", (e) => {
+        console.log("Second Listener");
+        e.stopImmediatePropagation();
+      });
+
+      btn.addEventListener("click", () => {
+        console.log("Third Listener");
+      });
+    </script>
+  </body>
+</html>

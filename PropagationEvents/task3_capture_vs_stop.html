@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3 capture vs stop</title>
+  </head>
+  <body>
+    <div id="outer">
+      <button id="inner">Click</button>
+    </div>
+    <script>
+
+// Task 3 (Event Propagation – Capture vs stopPropagation):
+// Show that capturing phase handlers still execute even when stopPropagation is used.
+// Hint: Capturing happens before the target and bubbling phases.
+
+      document
+        .getElementById("outer")
+        .addEventListener("click", () => console.log("Outer Capture"), true);
+
+      document.getElementById("inner").addEventListener("click", (e) => {
+        console.log("Inner Click");
+        e.stopPropagation();
+      });
+
+      document
+        .getElementById("outer")
+        .addEventListener("click", () => console.log("Outer Bubble"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task4 target currentTarget</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <button id="btn">Click</button>
+    </div>
+    <script>
+
+// Task 4 (Event Propagation – target vs currentTarget):
+// Identify which element was actually clicked and which element owns the event listener.
+// Hint: event.target refers to the clicked element, event.currentTarget refers to the listener holder.
+
+      document.getElementById("wrapper").addEventListener("click", (e) => {
+        console.log("target:", e.target.id);
+        console.log("currentTarget:", e.currentTarget.id);
+      });
+    </script>
+  </body>
+</html>

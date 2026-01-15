@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5 same element</title>
+  </head>
+  <body>
+    <button id="btn">Click</button>
+    <script>
+
+// Task 5 (Event Propagation – Same Element Capture & Bubble):
+// Attach both capturing and bubbling listeners on the same element and observe execution order.
+// Hint: Capturing listeners always run before bubbling listeners on the same element.
+
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => console.log("Bubble"));
+      btn.addEventListener("click", () => console.log("Capture"), true);
+    </script>
+  </body>
+</html>
