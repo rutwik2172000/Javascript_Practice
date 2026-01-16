@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Task dynamic add delete using event delegation</title>
+  </head>
+  <body>
+    <ul>
+      <li id="item-1">Item-1</li>
+      <li id="item-2">Item-2</li>
+      <li>Item-3</li>
+      <li>Item-4</li>
+      <li>Item-5</li>
+      <li>Item-6</li>
+      <span>This is Span</span>
+    </ul>
+
+    <button id="btn">add New Element</button>
+
+    <script>
+
+// Class Task :
+// Task (Event Delegation – Dynamic Add & Delete):
+// Dynamically add list items with a delete button and remove the correct item on click.
+// Hint: Attach one click listener to the parent <ul> and use event.target
+//       to detect button clicks and remove the corresponding <li>.
+
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        let el = document.createElement("li");
+        let cnt = document.createTextNode("Item-7 ");
+        el.appendChild(cnt);
+
+        let el1 = document.createElement("button");
+        el1.textContent = "Delete";
+
+        // append button INSIDE li
+        el.appendChild(el1);
+
+        // append li inside ul
+        let parent = document.querySelector("ul");
+        parent.appendChild(el);
+      });
+
+      // Event Delegation
+      let parent = document.querySelector("ul");
+      parent.addEventListener("click", (event) => {
+        console.log(event.target.tagName);
+
+        if (event.target.tagName === "LI") {
+        }
+
+        if (event.target.tagName === "BUTTON") {
+          event.target.parentElement.remove();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1 dynamic list click</title>
+  </head>
+  <body>
+    <h3>Dynamic List</h3>
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+
+    <button id="add">Add Item</button>
+
+    <script>
+
+// Task 1 (Event Delegation – Dynamic List):
+// Detect clicks on list items, including items added dynamically after page load.
+// Hint: Attach one click listener to the parent <ul> and check event.target.
+
+      const list = document.getElementById("list");
+      const addBtn = document.getElementById("add");
+
+      let count = 3;
+
+      addBtn.addEventListener("click", () => {
+        const li = document.createElement("li");
+        li.textContent = "Item " + count++;
+        list.appendChild(li);
+      });
+
+      list.addEventListener("click", (e) => {
+        if (e.target.tagName === "LI") {
+          alert("Clicked: " + e.target.textContent);
+        }
+      });
+    </script>
+  </body>
+</html>

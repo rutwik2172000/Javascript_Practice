@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5 card button</title>
+  </head>
+  <body>
+    <div id="cards">
+      <div class="card">
+        <p>Card 1</p>
+        <button>Like</button>
+      </div>
+      <div class="card">
+        <p>Card 2</p>
+        <button>Like</button>
+      </div>
+    </div>
+    <script>
+
+// Task 5 (Event Delegation – Button Inside Card):
+// Detect which card’s button was clicked and show the related card information.
+// Hint: Use event.target to detect the button and closest() to reach the card element.
+
+      document.getElementById("cards").addEventListener("click", (e) => {
+        if (e.target.tagName === "BUTTON") {
+          const cardText = e.target
+            .closest(".card")
+            .querySelector("p").innerText;
+          alert("Liked " + cardText);
+        }
+      });
+    </script>
+  </body>
+</html>

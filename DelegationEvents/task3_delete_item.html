@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3 delete item</title>
+  </head>
+  <body>
+    <ul id="todo">
+      <li>Task 1 <button>cancle</button></li>
+      <li>Task 2 <button>cancle</button></li>
+    </ul>
+    <script>
+
+// Task 3 (Event Delegation – Delete Item):
+// Remove the correct list item when its delete button is clicked.
+// Hint: Use event.target.closest() to find and remove the parent <li>.
+
+      document.getElementById("todo").addEventListener("click", (e) => {
+        if (e.target.tagName === "BUTTON") {
+          e.target.closest("li").remove();
+        }
+      });
+    </script>
+  </body>
+</html>

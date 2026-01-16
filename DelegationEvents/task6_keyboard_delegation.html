@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task6 keyboard delegation</title>
+  </head>
+  <body>
+    <ul id="keys">
+      <li data-key="a">Press A</li>
+      <li data-key="b">Press B</li>
+    </ul>
+    <script>
+
+// Task 6 (Keyboard Event + Delegation Logic):
+// Highlight a list item when its matching keyboard key is pressed.
+// Hint: Use keydown event and compare event.key with data-key attributes.
+
+      document.addEventListener("keydown", (e) => {
+        const items = document.querySelectorAll("#keys li");
+        items.forEach((item) => {
+          if (item.dataset.key === e.key) {
+            item.style.background = "lightgreen";
+          } else {
+            item.style.background = "";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
